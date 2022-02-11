@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="text">RGB GENERATOR</h1>
+    <div id="fundo">
+        <div id="main">
+            <div class="wrapper">
+                <input type="range" min="0"max="255" value="0" id="red" oninput="colors()">
+                <input type="text" id="resultr" value="0" readonly disabled style="width: 35px;">
+            </div>
+
+            <div class="wrapper">
+                <input type="range" min="0"max="255" value="0" id="green" oninput="colors()">
+                <input type="text" id="resultg" value="0" readonly disabled style="width: 35px;">
+            </div>
+
+           <div class="wrapper">
+                <input type="range" min="0"max="255" value="0" id="blue" oninput="colors()">
+                <input type="text" id="resultb" value="0" readonly disabled style="width: 35px;">
+           </div>
+
+            <div id="color"></div>
+         </div>
+    </div>
+
+         <script defer src="index.js"></script>
+</body>
+</html>

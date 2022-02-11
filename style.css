@@ -1,0 +1,111 @@
+#text{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1px;
+
+}
+
+#fundo{
+    width: 500px ;
+    height: 500px;
+    border: solid white;
+    border-radius: 20px;
+    margin-left:30%;
+    margin-top: 2px;
+    background: linear-gradient(120deg,orange,red,purple,blue);
+
+}
+
+#main{
+    background: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80%;
+    width: 350px;
+    height: 350px;
+    border: solid white 2px;
+    border-radius:15px;
+    text-align: center;
+}
+#red{
+    margin: 0 auto;
+    margin-top: 20px;
+    -webkit-appearance: none;
+    background: linear-gradient( 90deg, #000, red);
+    border-radius: 12px;
+    height: 10px;
+    width: 80%;
+}
+#red::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid white 2px;
+}
+
+#green{
+    margin: 0 auto;
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    background: linear-gradient( 90deg, #000,green);
+    border-radius: 12px;
+    height: 10px;
+    width: 80%;
+}
+#green::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid white 2px;
+}
+#blue{
+    margin: 0 auto;
+    -webkit-appearance: none;
+    background: linear-gradient( 90deg, #000, blue);
+    border-radius: 12px;
+    height: 10px;
+    width: 80%;
+   
+}
+#blue::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid white 2px;
+}
+#color{
+   margin: 0 auto;
+    margin-top: 10%;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: solid white 2px;
+}
+body{
+    background-color: black;
+}
+#resultr{
+    background: #000;
+    color: red;
+    border: solid black;
+    margin-left: 20px;
+}
+#resultg{
+    background: #000;
+    color: green;
+    border: solid black;
+    margin-left: 20px;
+}
+#resultb{
+    background: #000;
+    color: blue;
+    border: solid black;
+    margin-left: 20px;
+}
