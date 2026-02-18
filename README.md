@@ -38,15 +38,3 @@ Fluxo de dados (resumido)
 	→ `color.service.js` converte para `rgb(...)` e `#RRGGBB`
 	→ `dom.js` atualiza `color-preview`, `title`, inputs e a label HEX
 
-Extensões possíveis
-
-- Copiar HEX para área de transferência ao clicar na label.
-- Aceitar entrada em HEX e converter para RGB (atualizando sliders).
-- Adicionar testes unitários simples para `color.service.js`.
-
-Como testar localmente
-
-1. Abrir `index.html` diretamente no navegador (projeto é estático).
-2. Ajustar sliders ou digitar valores nos campos numéricos — observe o preview e a label HEX.
-
-
