@@ -5,31 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGB</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
 </head>
 <body>
-    <h1 id="text">RGB GENERATOR</h1>
-    <div id="fundo">
-        <div id="main">
-            <div class="wrapper">
-                <input type="range" min="0"max="255" value="0" id="red" oninput="colors()">
-                <input type="text" id="resultr" value="0" readonly disabled style="width: 35px;">
+    <div class="page">
+        <h1 class="title">RGB Generator</h1>
+        
+        <div class="panel">
+            <div class="panel__content">
+                <div class="controls-group">
+                    <div class="slider-group">
+                        <div class="slider-label">
+                            <span>Red</span>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range" class="slider slider--red" data-color="red" min="0" max="255" value="0">
+                            <input type="number" class="value value--red" data-result="red" value="0" min="0" max="255" step="1">
+                        </div>
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-label">
+                            <span>Green</span>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range" class="slider slider--green" data-color="green" min="0" max="255" value="0">
+                            <input type="number" class="value value--green" data-result="green" value="0" min="0" max="255" step="1">
+                        </div>
+                    </div>
+
+
+                    <div class="slider-group">
+                        <div class="slider-label">
+                            <span>Blue</span>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range" class="slider slider--blue" data-color="blue" min="0" max="255" value="0">
+                            <input type="number" class="value value--blue" data-result="blue" value="0" min="0" max="255" step="1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preview-section">
+                    <div class="color-preview">
+                        <p class="color-code">#000000</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="wrapper">
-                <input type="range" min="0"max="255" value="0" id="green" oninput="colors()">
-                <input type="text" id="resultg" value="0" readonly disabled style="width: 35px;">
-            </div>
-
-           <div class="wrapper">
-                <input type="range" min="0"max="255" value="0" id="blue" oninput="colors()">
-                <input type="text" id="resultb" value="0" readonly disabled style="width: 35px;">
-           </div>
-
-            <div id="color"></div>
-         </div>
+        </div>
     </div>
 
-         <script defer src="script.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
